@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-brand: "Playfair Display", "Fraunces", Georgia, serif;
+  
+  --color-brand-blue: #373A98;
+  --color-brand-blue-hover: #292B73;
+  --color-brand-yellow: #F4B223;
+  --color-brand-yellow-hover: #DB9E19;
+  --color-brand-cream: #FFFDF7;
+  --color-brand-accent: #E85D44;
+  --color-brand-teal: #23B5D3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-brand-cream);
+  color: #1a1b3a;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.glass-panel-dark {
+  background: rgba(55, 58, 152, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(55, 58, 152, 0.1);
+}
+
+/* Custom Dotted Pattern Background */
+.dotted-pattern {
+  background-image: radial-gradient(#373a98 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-repeat: repeat;
+  opacity: 0.04;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #373A98;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F4B223;
+}
+

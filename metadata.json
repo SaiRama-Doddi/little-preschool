@@ -1,0 +1,6 @@
+{
+  "name": "Little Scholars International Preschool",
+  "description": "Premium, modern, and responsive website for Little Scholars International Preschool, representing a safe, caring, and engaging educational environment that inspires future leaders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
